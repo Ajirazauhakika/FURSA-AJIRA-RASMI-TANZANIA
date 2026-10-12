@@ -3,103 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nafasi Mpya za Kazi na Fursa za Mtandaoni</title>
+    <title>Ajira Mpya Halali Tanzania 2026</title>
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
         body {
-            background-color: #f4f7f6;
-            color: #333;
+            background-color: #f2f2f2;
+            color: #222;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
-            padding: 20px;
+            padding: 15px 10px;
         }
-        .container {
+        .card {
             background: #ffffff;
-            max-width: 500px;
+            max-width: 480px;
             width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            overflow: hidden;
+            border-radius: 8px;
+            padding: 25px 20px;
             text-align: center;
-            padding: 25px;
-        }
-        .badge {
-            background-color: #e8f5e9;
-            color: #2e7d32;
-            font-weight: bold;
-            font-size: 13px;
-            padding: 6px 12px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         h1 {
-            font-size: 22px;
-            color: #1a237e;
-            line-height: 1.4;
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a1a;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .year {
+            color: #008000;
+            font-size: 26px;
+            font-weight: bold;
             margin-bottom: 15px;
-            font-weight: 700;
         }
-        p {
-            font-size: 15px;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 25px;
+        .divider {
+            height: 1px;
+            background-color: #777;
+            width: 50%;
+            margin: 0 auto 20px auto;
         }
-        .btn-wrapper {
-            margin: 20px 0;
-        }
-        .cta-btn {
+        .banner-img {
+            width: 100%;
+            border-radius: 4px;
             display: block;
-            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            margin-bottom: 25px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+        .sub-text {
+            font-size: 17px;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .list-group {
+            text-align: left;
+            max-width: 320px;
+            margin: 0 auto 25px auto;
+            font-size: 16px;
+            font-weight: 700;
+            color: #b35900;
+            line-height: 2;
+        }
+        .list-group span {
+            color: #4682b4;
+            margin-right: 6px;
+        }
+        .cta-label {
+            color: #008000;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+        .btn-cta {
+            display: block;
+            background: linear-gradient(180deg, #008000 0%, #004d00 100%);
             color: #ffffff;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 18px 25px;
-            border-radius: 50px;
-            box-shadow: 0 8px 20px rgba(255, 65, 108, 0.4);
-            transition: all 0.3s ease;
+            font-size: 17px;
+            font-weight: 800;
+            padding: 16px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0,128,0,0.3);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            animation: pulse 2s infinite;
+            transition: transform 0.2s;
+            margin-bottom: 25px;
         }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
-            100% { transform: scale(1); }
+        .btn-cta:active {
+            transform: scale(0.98);
         }
-        .footer-note {
-            font-size: 12px;
-            color: #888;
-            margin-top: 20px;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .social-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .fb { background-color: #1877f2; }
+        .ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285aebe6 90%); }
+        .tg { background-color: #24a1de; }
+        .wa { background-color: #25d366; }
+        
+        .footer-title {
+            color: #b35900;
+            font-weight: 700;
+            font-size: 17px;
+            margin-bottom: 25px;
+            text-decoration: underline;
+        }
+        .copyright {
+            font-size: 11px;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <span class="badge">🔥 NAFASI ZA KAZI & FURSA MPYA</span>
-        
-        <h1>Bonyeza Kitufe Hapa Chini Kuangalia Maelezo Yote na Kutuma Maombi</h1>
-        
-        <p>Tumeamua kuweka fursa hii hapa ili kusaidia kila mtu anayetafuta ajira na fursa za kujiongezea kipato. Usipitwe na nafasi hii leo!</p>
-        
-        <div class="btn-wrapper">
-            <!-- Smartlink yako imeunganishwa hapa -->
-            <a href="https://asiafilm.org/4/8c72aecbab717e20685ba1d4d32a55e4" class="cta-btn">
-                👉 BONYEZA HAPA KUANZA 👈
-            </a>
+    <div class="card">
+        <h1>AJIRA MPYA HALALI TANZANIA</h1>
+        <div class="year">2026</div>
+        <div class="divider"></div>
+
+        <!-- Picha inayofanana kabisa na ya kwenye mfano -->
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Je, unatafuta kazi?" class="banner-img">
+
+        <p class="sub-text">Pata taarifa za Ajira Mpya kutoka Kampuni mbalimbali nchi Tanzania kila siku;</p>
+
+        <div class="list-group">
+            <div><span>☑</span> Viwandani</div>
+            <div><span>☑</span> Vituo vya Mafuta (Sheli)</div>
+            <div><span>☑</span> Migahawa</div>
+            <div><span>🛒</span> Supermarket</div>
         </div>
 
-        <p class="footer-note">Ukurasa huu ni salama na umeratibiwa rasmi kwa ajili yako.</p>
+        <div class="divider"></div>
+
+        <p class="cta-label">Bofya kitufe hapa chini Kujiunga na Group</p>
+
+        <!-- Kitufe kimeunganishwa na Smartlink yako moja kwa moja -->
+        <a href="https://asiafilm.org/4/8c72aecbab717e20685ba1d4d32a55e4" class="btn-cta">
+            JIUNGE HAPA - PATA KAZI SASA
+        </a>
+
+        <div class="social-icons">
+            <a href="https://asiafilm.org/4/8c72aecbab717e20685ba1d4d32a55e4" class="social-icon fb">f</a>
+            <a href="https://asiafilm.org/4/8c72aecbab717e20685ba1d4d32a55e4" class="social-icon ig">📷</a>
+            <a href="https://asiafilm.org/4/8c72aecbab717e20685ba1d4d32a55e4" class="social-icon tg">✈</a>
+            <a href="https://asiafilm.org/4/8c72aecbab717e20685ba1d4d32a55e4" class="social-icon wa">💬</a>
+        </div>
+
+        <div class="footer-title">Ajira kwa wote</div>
+        <p class="copyright">© 2026 AJIRA HALALI TANZANIA, HAKI ZOTE ZIMEHIFADHIWA</p>
     </div>
 
 </body>
